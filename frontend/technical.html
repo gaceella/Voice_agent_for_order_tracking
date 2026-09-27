@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Technical — VoiceSupport AI</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>#technical { --hue: var(--amber); }</style>
+</head>
+<body>
+<nav><div class="wrap row">
+  <div class="brand"><span class="mark"></span> VoiceSupport AI</div>
+  <div class="navlinks">
+    <a href="index.html">Demo</a>
+    <a href="billing.html">Billing</a>
+    <a class="active" href="technical.html">Technical</a>
+    <a href="returns.html">Returns</a>
+    <a href="architecture.html">Architecture</a>
+  </div>
+  <a class="navcta" href="returns.html">Next: Returns →</a>
+</div></nav>
+
+<div class="wrap">
+  <div class="pagehead">
+    <div class="eyebrow" style="color:var(--amber);">Technical</div>
+    <h2>Troubleshooting grounded in your actual docs.</h2>
+    <p class="sub">Answers are retrieved from an embedded knowledge base via semantic search — the agent doesn't guess, it cites what's actually in your documentation.</p>
+  </div>
+
+  <section id="technical">
+    <ul class="caps">
+      <li>Semantic search over product docs (pgvector)</li>
+      <li>Step-by-step guided troubleshooting</li>
+      <li>Gap logging when no answer is found</li>
+      <li>Knowledge base grows from unresolved calls</li>
+    </ul>
+    <div class="panel">
+      <div class="row"><span>Tool call</span><span>search_kb(q)</span></div>
+      <div class="row"><span>Data source</span><span>pgvector</span></div>
+      <div class="row"><span>Fallback</span><span>human_handoff</span></div>
+      <div class="row"><span>Self-improving</span><span>true</span></div>
+    </div>
+  </section>
+</div>
+
+<div class="wrap"><footer><span>VoiceSupport AI</span><span>Backend · <code>localhost:8000</code></span></footer></div>
+</body>
+</html>

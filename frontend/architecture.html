@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Architecture — VoiceSupport AI</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav><div class="wrap row">
+  <div class="brand"><span class="mark"></span> VoiceSupport AI</div>
+  <div class="navlinks">
+    <a href="index.html">Demo</a>
+    <a href="billing.html">Billing</a>
+    <a href="technical.html">Technical</a>
+    <a href="returns.html">Returns</a>
+    <a class="active" href="architecture.html">Architecture</a>
+  </div>
+  <a class="navcta" href="index.html">Try the demo →</a>
+</div></nav>
+
+<div class="wrap">
+  <div class="pagehead">
+    <div class="eyebrow">Under the hood</div>
+    <h2>How it's built</h2>
+    <p class="sub">A router agent, three specialist tracks, and shared state — the same architecture behind every call.</p>
+  </div>
+
+  <section>
+    <svg viewBox="0 0 1000 150" width="100%" style="display:block;">
+      <circle cx="70" cy="75" r="22" fill="none" stroke="#8A929C" stroke-width="1.3"/>
+      <text x="70" y="115" fill="#5B6470" font-size="12" text-anchor="middle" font-family="Instrument Sans">Customer</text>
+      <line x1="92" y1="75" x2="428" y2="75" stroke="#8A929C" stroke-width="1" stroke-dasharray="3 5"/>
+      <circle cx="458" cy="75" r="26" fill="none" stroke="#2954E5" stroke-width="1.6"/>
+      <text x="458" y="118" fill="#2954E5" font-size="12" text-anchor="middle" font-family="Instrument Sans">Router</text>
+      <line x1="482" y1="66" x2="800" y2="30" stroke="#0E8074" stroke-width="1.1"/>
+      <line x1="482" y1="75" x2="800" y2="75" stroke="#B4720A" stroke-width="1.1"/>
+      <line x1="482" y1="84" x2="800" y2="120" stroke="#B14A3C" stroke-width="1.1"/>
+      <circle cx="822" cy="30" r="16" fill="none" stroke="#0E8074" stroke-width="1.3"/>
+      <circle cx="822" cy="75" r="16" fill="none" stroke="#B4720A" stroke-width="1.3"/>
+      <circle cx="822" cy="120" r="16" fill="none" stroke="#B14A3C" stroke-width="1.3"/>
+      <text x="848" y="34" fill="#0E8074" font-size="12" font-family="Instrument Sans">Billing</text>
+      <text x="848" y="79" fill="#B4720A" font-size="12" font-family="Instrument Sans">Technical</text>
+      <text x="848" y="124" fill="#B14A3C" font-size="12" font-family="Instrument Sans">Returns</text>
+    </svg>
+    <div class="archgrid">
+      <div class="archcard"><div class="t">Voice layer</div><div class="v">ElevenLabs Agents</div></div>
+      <div class="archcard"><div class="t">Backend</div><div class="v">FastAPI</div></div>
+      <div class="archcard"><div class="t">Data</div><div class="v">PostgreSQL</div></div>
+      <div class="archcard"><div class="t">Retrieval</div><div class="v">pgvector RAG</div></div>
+    </div>
+  </section>
+</div>
+
+<div class="wrap"><footer><span>VoiceSupport AI</span><span>Backend · <code>localhost:8000</code></span></footer></div>
+</body>
+</html>

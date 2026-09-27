@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Returns — VoiceSupport AI</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>#returns { --hue: var(--rose); }</style>
+</head>
+<body>
+<nav><div class="wrap row">
+  <div class="brand"><span class="mark"></span> VoiceSupport AI</div>
+  <div class="navlinks">
+    <a href="index.html">Demo</a>
+    <a href="billing.html">Billing</a>
+    <a href="technical.html">Technical</a>
+    <a class="active" href="returns.html">Returns</a>
+    <a href="architecture.html">Architecture</a>
+  </div>
+  <a class="navcta" href="architecture.html">Next: Architecture →</a>
+</div></nav>
+
+<div class="wrap">
+  <div class="pagehead">
+    <div class="eyebrow" style="color:var(--rose);">Returns</div>
+    <h2>Refunds and returns, without the back-and-forth.</h2>
+    <p class="sub">Checks return eligibility against order age and policy rules automatically, and hands off ambiguous or high-value cases to a person.</p>
+  </div>
+
+  <section id="returns">
+    <ul class="caps">
+      <li>Automatic eligibility check against policy</li>
+      <li>Return label / next-step instructions</li>
+      <li>High-value case escalation</li>
+      <li>Full conversation log for audit</li>
+    </ul>
+    <div class="panel">
+      <div class="row"><span>Tool call</span><span>check_eligibility(id)</span></div>
+      <div class="row"><span>Data source</span><span>PostgreSQL</span></div>
+      <div class="row"><span>Escalation trigger</span><span>value_gt_threshold</span></div>
+      <div class="row"><span>Logged</span><span>full_transcript</span></div>
+    </div>
+  </section>
+</div>
+
+<div class="wrap"><footer><span>VoiceSupport AI</span><span>Backend · <code>localhost:8000</code></span></footer></div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Billing — VoiceSupport AI</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>#billing { --hue: var(--teal); }</style>
+</head>
+<body>
+<nav><div class="wrap row">
+  <div class="brand"><span class="mark"></span> VoiceSupport AI</div>
+  <div class="navlinks">
+    <a href="index.html">Demo</a>
+    <a class="active" href="billing.html">Billing</a>
+    <a href="technical.html">Technical</a>
+    <a href="returns.html">Returns</a>
+    <a href="architecture.html">Architecture</a>
+  </div>
+  <a class="navcta" href="technical.html">Next: Technical →</a>
+</div></nav>
+
+<div class="wrap">
+  <div class="pagehead">
+    <div class="eyebrow" style="color:var(--teal);">Billing</div>
+    <h2>Order and payment questions, resolved with real data.</h2>
+    <p class="sub">Handles order status, invoice questions, and payment disputes by calling live tools against the customer database — not a scripted FAQ.</p>
+  </div>
+
+  <section id="billing">
+    <ul class="caps">
+      <li>Real-time order lookup by ID or account</li>
+      <li>Invoice and charge explanations</li>
+      <li>Refund eligibility pre-checks</li>
+      <li>Automatic escalation to a human on disputes</li>
+    </ul>
+    <div class="panel">
+      <div class="row"><span>Tool call</span><span>lookup_order(id)</span></div>
+      <div class="row"><span>Data source</span><span>PostgreSQL</span></div>
+      <div class="row"><span>Avg. handle time</span><span>~40s</span></div>
+      <div class="row"><span>Escalation trigger</span><span>dispute_detected</span></div>
+    </div>
+  </section>
+</div>
+
+<div class="wrap"><footer><span>VoiceSupport AI</span><span>Backend · <code>localhost:8000</code></span></footer></div>
+</body>
+</html>

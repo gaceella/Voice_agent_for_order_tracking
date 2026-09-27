@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>VoiceSupport AI</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+  .hero { padding:76px 0 60px; display:grid; grid-template-columns:1.05fr 0.95fr; gap:52px; align-items:start; }
+  @media (max-width:780px){ .hero{ grid-template-columns:1fr; } }
+</style>
+</head>
+<body>
+<nav><div class="wrap row">
+  <div class="brand"><span class="mark"></span> VoiceSupport AI</div>
+  <div class="navlinks">
+    <a class="active" href="index.html">Demo</a>
+    <a href="billing.html">Billing</a>
+    <a href="technical.html">Technical</a>
+    <a href="returns.html">Returns</a>
+    <a href="architecture.html">Architecture</a>
+  </div>
+  <a class="navcta" href="billing.html">Explore →</a>
+</div></nav>
+
+<div class="wrap">
+  <section class="hero" style="border-top:none;">
+    <div>
+      <div class="badge"><span class="d"></span> Multi-agent voice support, live</div>
+      <h1>Support that resolves calls, <span>not just answers them.</span></h1>
+      <p class="lede">A voice-native platform that routes billing, technical, and returns conversations to specialist logic — grounded in real order data and a live knowledge base, with human handoff built in.</p>
+      <div class="ctarow">
+        <a class="btn primary" href="billing.html">See how it works</a>
+        <a class="btn ghost" href="architecture.html">View architecture</a>
+      </div>
+    </div>
+    <div class="callcard">
+      <div class="top"><span class="t">Live demo</span><span class="live"><span class="d"></span>Connected</span></div>
+      <elevenlabs-convai
+        agent-id="agent_5501m3ebjmswep9bnhj7gn26rebd"
+        variant="expanded"
+        avatar-orb-color-1="#2954E5"
+        avatar-orb-color-2="#0E8074"
+        action-text="Talk to Ava"
+        start-call-text="Start conversation"
+        end-call-text="End call"
+      ></elevenlabs-convai>
+    </div>
+  </section>
+</div>
+
+<div class="wrap"><footer><span>VoiceSupport AI</span></footer></div>
+<script src="https://cdn.jsdelivr.net/npm/@elevenlabs/convai-widget-embed" async></script>
+</body>
+</html>

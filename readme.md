@@ -11,7 +11,7 @@ backend/requirements.txt — Python dependencies
 ```
 cd backend
 pip install -r requirements.txt
-uvicorn main:app --reload --port 8000
+uvicorn main:app --reload --port 8083
 ```
 Visit `http://localhost:8083/docs` — FastAPI gives you a free interactive
 test page for every endpoint. Try `GET /orders/4521`.
@@ -21,7 +21,7 @@ Either double-click `frontend/index.html`, or, if the mic doesn't ask for
 permission properly:
 ```
 cd frontend
-python3 -m http.server 8000
+python3 -m http.server 8083
 ```
 (if you do this, run the backend on a different port, e.g. `--port 8001`,
 so they don't clash)
